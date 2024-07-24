@@ -27,7 +27,7 @@ PASSWORD = os.getenv("COUCHBASE_PASSWORD")
 BUCKET_NAME = os.getenv("COUCHBASE_BUCKET")
 SCOPE_NAME = os.getenv("COUCHBASE_SCOPE")
 COLLECTION_NAME = os.getenv("COUCHBASE_COLLECTION")
-INDEX_NAME = "index-fts-vectors"  # The name of the search index
+INDEX_NAME = os.getenv("COUCHBASE_INDEX")
 
 def connect_to_cluster():
     """
