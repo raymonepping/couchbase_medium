@@ -1,0 +1,84 @@
+{
+    "roles": {
+        "admin": {
+            "role": "admin",
+            "type": "generic",
+            "description": "The admin role allows full access to all cluster features including security and data operations."
+        },
+        "backup_admin": {
+            "role": "backup_admin",
+            "type": "generic",
+            "description": "The Data Backup & Restore role allows data to be backed up and restored, per bucket. The role supports the reading of data."
+        },
+        "bucket_admin": {
+            "role": "bucket_admin",
+            "type": "bucket",
+            "description": "The Bucket Admin role allows the management of all per bucket features (including starting and stopping XDCR). The role allows access to Couchbase Web Console, but does not permit the reading or writing of data."
+        },
+        "bucket_full_access": {
+            "role": "bucket_full_access",
+            "type": "bucket",
+            "description": "The Application Access role provides read and write access to data, per bucket. The role does not allow access to Couchbase Web Console: it is intended for applications, rather than users."
+        },
+        "cluster_admin": {
+            "role": "cluster_admin",
+            "type": "generic",
+            "description": "The Cluster Admin role allows the management of all cluster features except security. The role allows access to Couchbase Web Console, but does not permit the writing of data."
+        },
+        "data_backup": {
+            "role": "data_backup",
+            "type": "bucket",
+            "description": "The Data Backup & Restore role allows data to be backed up and restored, per bucket. The role supports the reading of data."
+        },
+        "data_monitoring": {
+            "role": "data_monitoring",
+            "type": "bucket",
+            "description": "The Data Monitor role allows statistics to be read for a given bucket, scope, or collection. It does not allow access to Couchbase Web Console, and does not permit the reading of data. This role is intended to support application-access, rather than user-access."
+        },
+        "data_reader": {
+            "role": "data_reader",
+            "type": "bucket",
+            "description": "The Data Reader role allows data to be read per collection, given corresponding specifications for bucket and scope."
+        },
+        "data_writer": {
+            "role": "data_writer",
+            "type": "bucket",
+            "description": "The Data Writer role allows data to be written per collection, given corresponding specifications for bucket and scope. The role does not allow access to Couchbase Web Console: it is intended to support applications, rather than users."
+        },
+        "eventing_admin": {
+            "role": "eventing_admin",
+            "type": "generic",
+            "description": "The eventing_admin role allows the management of all Eventing Service features."
+        },
+        "fts_admin": {
+            "role": "fts_admin",
+            "type": "bucket",
+            "description": "The Search Admin role allows management of all features of the Search Service, per bucket. The role allows access to Couchbase Web Console."
+        },
+        "fts_searcher": {
+            "role": "fts_searcher",
+            "type": "bucket",
+            "description": "The Search Reader role allows Full Text Search indexes to be searched for bucket, scope, and collection. The role allows access to Couchbase Web Console, and supports the reading of data."
+        },
+        "ro_admin": {
+            "role": "ro_admin",
+            "type": "generic",
+            "description": "The Read-Only Admin role supports the reading of Couchbase Server statistics. This information includes registered usernames with roles and authentication domains, but excludes passwords. Since Couchbase Server version 7.6.2, users with this role can also read Backup Service data to monitor backup plans and tasks. The role allows access to Couchbase Web Console."
+        },
+        "scope_admin": {
+            "role": "scope_admin",
+            "type": "bucket",
+            "description": "The scope_admin role allows management of scopes within a bucket."
+        },
+        "security_admin_external": {
+            "role": "security_admin_external",
+            "type": "generic",
+            "description": "The security_admin_external role allows the management of external security configurations."
+        },
+        "security_admin_local": {
+            "role": "security_admin_local",
+            "type": "generic",
+            "description": "The security_admin_local role allows the management of local security configurations."
+        }
+    }
+}

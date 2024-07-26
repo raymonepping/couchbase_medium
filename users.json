@@ -1,0 +1,15 @@
+{
+    "users": [
+        {
+            "username": "john_doe",
+            "password": "password_for_john_doe",
+            "create": true,
+            "roles": [
+                { "role": "data_reader" },
+                { "role": "data_writer" },
+                { "role": "security_admin_local" }
+            ],
+            "description": "User with multiple roles for various admin and data operations."
+        }
+    ]
+}
