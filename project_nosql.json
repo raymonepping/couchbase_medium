@@ -1,0 +1,15 @@
+{
+  "gitignore": "/Users/repping/Documents/GitHub/---scripting/Couchbase/gitignore",
+  "apps": [
+    {
+      "name": "couchbase",
+      "config": "config1.yml",
+      "init": "init1.sh"
+    }
+  ],
+  "shared": [
+    "config_shared.yml",
+    "script_shared.sh",
+    "logs/"
+  ]
+}
