@@ -80,7 +80,7 @@ jq -c '.apps[]' "../$INPUT_FILE" | while read app; do
 done
 
 # Copy the commit_git.sh script to the project directory
-COMMIT_SCRIPT_PATH="/Users/repping/Documents/GitHub/---scripting/Couchbase/Docker/commit_git.sh"
+COMMIT_SCRIPT_PATH="./commit_git.sh"
 if [ -f "$COMMIT_SCRIPT_PATH" ]; then
   cp "$COMMIT_SCRIPT_PATH" ./commit_git.sh
   echo "commit_git.sh script copied to the project directory."
