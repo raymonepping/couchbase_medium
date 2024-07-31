@@ -1,0 +1,36 @@
+# Node modules (if using Node.js)
+node_modules/
+
+# Python virtual environment (if using Python)
+venv/
+*.pyc
+__pycache__/
+
+# Docker-related files
+docker-compose.override.yml
+*.log
+
+# Build artifacts
+build/
+dist/
+*.tar
+*.gz
+
+# Environment files
+.env
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE/editor-specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Miscellaneous
+*.pid
+*.seed
+*.db
+*.sqlite
